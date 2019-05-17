@@ -1,0 +1,57 @@
+% !TeX root = document.tex
+\ProvidesPackage{style}
+
+% configure KOMA-Script document class
+\KOMAoptions{paper=A4,fontsize=12pt}    % basic layout
+\KOMAoptions{parskip,abstract}          % text formatting
+
+% import packages
+% ------------------------------------------------------------------------------
+
+\usepackage{babel}                  % language support, translation of labels
+\usepackage{csquotes}               % typographic correct quotations
+\usepackage{hyperref}               % hyperlinks in PDF output, \autoref
+\usepackage{microtype}              % improved typography system
+\usepackage{mathtools}              % AMS math tools
+\usepackage{fontspec,unicode-math}  % font selecting in XeTeX
+\usepackage{siunitx}                % typographic correct SI units & quantities
+\usepackage{booktabs,tabularx}      % professional tables
+\usepackage{biblatex}               % better bibliography
+
+% configure packages
+% ------------------------------------------------------------------------------
+
+% babel - disable language shorthands
+\renewcommand{\languageshorthands}[1]{}
+% babel - declare own shorthands
+\useshorthands{"}
+\defineshorthand{"`}{\openautoquote}
+\defineshorthand{"'}{\closeautoquote}
+\defineshorthand{"=}{\penalty\@M-\hskip\z@skip}
+
+% select fonts
+% ------------------------------------------------------------------------------
+
+\setmainfont{LibertinusSerif}[
+    UprightFont         = *-Regular,
+    ItalicFont          = *-Italic,
+    BoldFont            = *-Bold,
+    BoldItalicFont      = *-BoldItalic,
+    Extension           = .otf,
+    SmallCapsFeatures   = {Letters=SmallCaps},
+]
+\setsansfont{LibertinusSans}[
+    UprightFont         = *-Regular,
+    ItalicFont          = *-Italic,
+    BoldFont            = *-Bold,
+    Extension           = .otf,
+    SmallCapsFeatures   = {Letters=SmallCaps},
+]
+\setmonofont{FiraCode}[
+    UprightFont         = *-Regular,
+    BoldFont            = *-Bold,
+    Extension           = .otf,
+    AutoFakeSlant       = 0.25,
+    Scale               = MatchLowercase,
+]
+\setmathfont{LibertinusMath-Regular.otf}
