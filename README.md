@@ -1,5 +1,7 @@
 # XeLaTeX-Template
 
+![CC0 1.0 Universal](https://licensebuttons.net/p/zero/1.0/80x15.png)
+
 This repository contains a general-purpose template for writing articles
 with XeLaTeX.
 
