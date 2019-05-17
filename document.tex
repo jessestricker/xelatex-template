@@ -1,10 +1,30 @@
 % !TeX root = document.tex
 \documentclass[ngerman]{scrartcl}
 \usepackage{style}
+\usepackage{blindtext,lipsum}
 
-\usepackage{blindtext}
+% meta information
+% ------------------------------------------------------------------------------
+
+\title{XeLaTeX-Template}
+\author{Jesse Stricker}
+\date{\printdate{2019-05-17}}
+
+% document body
+% ------------------------------------------------------------------------------
 
 \begin{document}
+
+\maketitle
+
+\begin{abstract}
+    \lipsum[1][1-6]
+\end{abstract}
+
+\tableofcontents
+
+% main matter
+% ------------------------------------------------------------------------------
 
 \section{Libertinus Serif}
 {\rmfamily\blindtext}
