@@ -7,7 +7,7 @@ with XeLaTeX.
 
 The easiest way to compile the documents using this template is to run
 _latexmk_. This requires an installed Perl distribution and the
-[latexmk](https://www.ctan.org/pkg/latexmk).
+[latexmk package](https://www.ctan.org/pkg/latexmk).
 
 ```bash
 latexmk --pdf --xelatex --outdir=out document.tex
